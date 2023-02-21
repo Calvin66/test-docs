@@ -6,7 +6,7 @@ module.exports = {
   theme: "vdoing",
   title: "ELADMIN 在线文档",
   description: '一个简单且易上手的 Spring boot 后台管理框架',
-  base: "/",
+  base: "/test-docs/",
   markdown: {
     lineNumbers: true
   },
