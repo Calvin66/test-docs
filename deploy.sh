@@ -20,8 +20,8 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git remote add origin https://github.com/Calvin66/test-docs.git
+git remote add origin git@github.com:Calvin66/test-docs.git
 git branch -M main
-git push -f https://github.com/Calvin66/test-docs.git main:gh-pages
+git push -f git@github.com:Calvin66/test-docs.git main:gh-pages
 
 cd -
