@@ -40,5 +40,4 @@ postList: none
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
 ```
-:::
 
