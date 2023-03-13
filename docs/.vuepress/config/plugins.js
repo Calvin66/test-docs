@@ -1,25 +1,5 @@
 // Plugin Config
 module.exports = [
-  // 搜索框第三方搜索
-  [
-    "thirdparty-search", {
-      thirdparty: [
-        {
-          title: "在GitHub中搜索",
-          frontUrl: "https://github.com/search?q=",
-          behindUrl: ""
-        },
-        {
-          title: "在Google中搜索",
-          frontUrl: "https://www.google.com/search?q="
-        },
-        {
-          title: "在Baidu中搜索",
-          frontUrl: "https://www.baidu.com/s?wd="
-        }
-      ]
-    }
-  ],
   // 代码块复制
   [
     "one-click-copy", {
@@ -50,19 +30,4 @@ module.exports = [
       }
     }
   ],
-  [
-    '@vssue/vuepress-plugin-vssue', {
-      locale: 'zh-CN',
-      platform: 'github-v4',
-      owner: 'elunez',
-      repo: 'eladmin-doc',
-      clientId: '0ab9b83a2d3b7b4795c5',
-      clientSecret: 'cf8c8402e74******803660492f1993c5',
-    }
-  ],
-  [
-  'sitemap', {
-      hostname: 'https://eladmin.vip' // 网站域名
-    }
-  ]
 ];

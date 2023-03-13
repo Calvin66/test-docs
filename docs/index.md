@@ -1,25 +1,44 @@
 ---
 home: true
 heroImage: /logo/logo.png
-heroText: ELADMIN 在线文档
-tagline: 一个简单且易上手的 Spring boot 后台管理框架
+heroText: 赤兔实时计算平台
+tagline: 赤兔实时计算平台是大数据产品生态体系的实时化分析利器，是基于 Apache Flink 构建的具备一站开发、无缝连接、亚秒延时、低廉成本、安全稳定等特点的企业级实时大数据计算平台。平台提供SQL化IDE开发环境，任务运维发布流程，任务监控体系，多环境隔离转环境支持，多集群管理等多种企业级特性支持，帮助企业加速进行实时应用开发与实践, 加快实时化数字化的建设进程。
 actionText: 快速开始 →
 actionLink: /pages/010101/
 bannerBg: none
 
 features:
-- title: 技术栈
-  details: 使用 SpringBoot、Jpa、Security、Redis、Vue 等前后端前沿技术开发。
-- title: 模块化
-  details: 后端采用按功能分模块开发方式，提升开发，测试效率。
-- title: 高效率
-  details: 项目简单可配，内置代码生成器，配置好表信息就能一键生成前后端代码。
-- title: 分离式
-  details: 前后端完全分离，前端基于 Vue，后端基于 Spring boot。
-- title: 响应式
-  details: 支持电脑、平板、手机等所有主流设备访问。
+- title: 一站式
+  details: 提供 Flink SQL/JAR 任务开发、上线、运维、监控一体化
 - title: 易用性
-  details: 几乎可用于所有Web项目的开发，如 OA、Cms，网址后台管理等。
-
+  details: Flink 元表自动生成、支持 Flink 多版本、自定义配置监控告警规则等
+- title: 易扩展
+  details: 前后端分离，后端基于Spring Boot搭建，支持用户快速开发扩展新功能，如连接器、数据源、告警通知方式、Flink版本
 postList: none
 ---
+## 功能
+::: cardList 2
+```yaml
+- name: 通过SQL或代码开发实时任务
+  desc: 
+  link: 
+  bgColor: '#f1f1f1'
+  textColor: '#2A3344'
+- name: 完善的任务发布流程
+  desc: 
+  link: 
+  bgColor: '#f1f1f1'
+  textColor: '#2A3344'
+- name: 强大的运维监控告警支持
+  desc: 
+  link: 
+  bgColor: '#f1f1f1'
+  textColor: '#2A3344'
+- name: 提供企业级功能支持
+  desc: 
+  link: 
+  bgColor: '#f1f1f1'
+  textColor: '#2A3344'
+```
+:::
+

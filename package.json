@@ -2,7 +2,7 @@
   "name": "eladmin",
   "version": "1.0.0",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh"
   },
@@ -14,13 +14,13 @@
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-one-click-copy": "^1.0.2",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-plugin-smplayer": "^1.5.3",
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.8.1",
     "yamljs": "^0.3.0"
   },
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.7",
-    "@vssue/vuepress-plugin-vssue": "^1.4.8",
-    "vuepress-plugin-sitemap": "^2.3.1"
+    "@vssue/vuepress-plugin-vssue": "^1.4.8"
   }
 }
