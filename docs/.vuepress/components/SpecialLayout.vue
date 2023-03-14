@@ -1,9 +1,20 @@
 <template>
   <div class="layout-container">
-    <div class="platform-container flex">
+    <div class="platform-container flex f-aic">
       <div class="left">
         <h1>赤兔实时计算平台</h1>
         <div>基于Apache Flink构建的企业级、一站式、高性能、低门槛实时大数据计算平台，广泛适用于流式数据开发应用场景。</div>
+        <ul>
+          <li>一站式的流任务管理平台</li>
+          <li>一站式的流任务管理平台</li>
+          <li>一站式的流任务管理平台</li>
+          <li>一站式的流任务管理平台</li>
+          <li>一站式的流任务管理平台</li>
+        </ul>
+        <div class="flex f-aic">
+          <el-button>体验 Demo</el-button>
+          <el-button>GitHub</el-button>
+        </div>
       </div>
       <div class="right">
         <!-- <el-button type="success">按钮</el-button> -->
@@ -46,6 +57,7 @@
       .left,
       .right {
         width: 50%;
+        padding: 0 20px;
       }
     }
     .flex {
