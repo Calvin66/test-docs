@@ -9,20 +9,22 @@
   "devDependencies": {
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
-    "sass":"^1.32.5",
-    "sass-loader":"^7.3.1",
     "json2yaml": "^1.1.0",
+    "sass": "^1.32.5",
+    "sass-loader": "^7.3.1",
     "vuepress": "^1.4.1",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-one-click-copy": "^1.0.2",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
-    "vuepress-plugin-smplayer": "^1.5.3",
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.8.1",
     "yamljs": "^0.3.0"
   },
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.7",
-    "@vssue/vuepress-plugin-vssue": "^1.4.8"
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "async-validator": "1.11.5",
+    "element-ui": "^2.15.13",
+    "vue-dplayer": "^0.0.10"
   }
 }
