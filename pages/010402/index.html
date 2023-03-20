@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>容器部署方式 | ELADMIN 在线文档</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/test-docs/logo/small.png">
+    <script async="true" src="https://cdn.wwads.cn/js/makemoney.js"></script>
+    <script>function ABDetected(){var adBlockDetected_div=document.createElement("div");adBlockDetected_div.style.cssText="position: absolute; top: 0; left: 0; width: 100%; background: #fc6600; color: #fff; z-index: 9999999999; font-size: 14px; text-align: center; line-height: 1.5; font-weight: bold; padding-top: 6px; padding-bottom: 6px;";adBlockDetected_div.innerHTML="我们的广告服务商 <a style='color:#fff;text-decoration:underline' target='_blank' href='https://wwads.cn/page/end-user-privacy'>并不跟踪您的隐私</a>，为了支持本项目的长期发展，请将本网站 <a style='color: #fff;text-decoration:underline' target='_blank' href='https://wwads.cn/page/whitelist-wwads'>加入广告拦截器的白名单</a>。";document.getElementsByTagName("body")[0].appendChild(adBlockDetected_div);var adBlockDetected_close=document.createElement("div");adBlockDetected_close.style.cssText="position: absolute; top: 0; right: 10px; width: 30px; height: 30px; background: #fc6600; color: #fff; z-index: 9999999999; line-height: 30px; cursor: pointer;";adBlockDetected_close.innerHTML="×";adBlockDetected_div.appendChild(adBlockDetected_close);adBlockDetected_close.onclick=function(){this.parentNode.parentNode.removeChild(this.parentNode)}}function docReady(t){"complete"===document.readyState||"interactive"===document.readyState?setTimeout(t,1):document.addEventListener("DOMContentLoaded",t)}docReady(function(){setTimeout(function(){if(window._AdBlockInit===undefined){ABDetected()}},3e3)});var _hmt=_hmt||[];(function(){let aHtml=document.createElement("a");var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?300a24a5326d0e7a0ff1b14c4e8d9056";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+    <meta name="description" content="一个简单且易上手的 Spring boot 后台管理框架">
+    <meta name="keywords" content="eladmin,el-admin,eladmin官网,eladmin在线文档,eladmin学习">
+    <meta name="theme-color" content="#11a8cd">
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <meta name="baidu-site-verification" content="code-kdORRzs7wW">
+    <meta name="sogou_site_verification" content="M7FZGnsiqa">
+    <meta name="360-site-verification" content="f6ae0ca805b4ad57430f50784d798c2e">
+    
+    <link rel="preload" href="/test-docs/assets/css/0.styles.5728d9f8.css" as="style"><link rel="preload" href="/test-docs/assets/js/app.3437f3ea.js" as="script"><link rel="preload" href="/test-docs/assets/js/2.5adb828d.js" as="script"><link rel="preload" href="/test-docs/assets/js/28.996095ac.js" as="script"><link rel="prefetch" href="/test-docs/assets/js/10.63a57ba0.js"><link rel="prefetch" href="/test-docs/assets/js/11.fc16cfce.js"><link rel="prefetch" href="/test-docs/assets/js/12.2579c3c6.js"><link rel="prefetch" href="/test-docs/assets/js/13.1fa21eb8.js"><link rel="prefetch" href="/test-docs/assets/js/14.0f2b426d.js"><link rel="prefetch" href="/test-docs/assets/js/15.8397eb44.js"><link rel="prefetch" href="/test-docs/assets/js/16.2f479284.js"><link rel="prefetch" href="/test-docs/assets/js/17.edbd3a7f.js"><link rel="prefetch" href="/test-docs/assets/js/18.8318fef7.js"><link rel="prefetch" href="/test-docs/assets/js/19.c091ad35.js"><link rel="prefetch" href="/test-docs/assets/js/20.51cfbed0.js"><link rel="prefetch" href="/test-docs/assets/js/21.b1c1b7f3.js"><link rel="prefetch" href="/test-docs/assets/js/22.9a3aa39c.js"><link rel="prefetch" href="/test-docs/assets/js/23.b8d5d8f4.js"><link rel="prefetch" href="/test-docs/assets/js/24.b2ba324e.js"><link rel="prefetch" href="/test-docs/assets/js/25.4b73d57a.js"><link rel="prefetch" href="/test-docs/assets/js/26.fe0d99f0.js"><link rel="prefetch" href="/test-docs/assets/js/27.780a9ffa.js"><link rel="prefetch" href="/test-docs/assets/js/29.cb7827cf.js"><link rel="prefetch" href="/test-docs/assets/js/3.6329d07e.js"><link rel="prefetch" href="/test-docs/assets/js/30.69c5a581.js"><link rel="prefetch" href="/test-docs/assets/js/31.686b3e80.js"><link rel="prefetch" href="/test-docs/assets/js/32.76bb21b9.js"><link rel="prefetch" href="/test-docs/assets/js/33.61b056d0.js"><link rel="prefetch" href="/test-docs/assets/js/4.327215e1.js"><link rel="prefetch" href="/test-docs/assets/js/5.aeec4747.js"><link rel="prefetch" href="/test-docs/assets/js/6.dfd951d8.js"><link rel="prefetch" href="/test-docs/assets/js/7.2e7a73a2.js"><link rel="prefetch" href="/test-docs/assets/js/8.b5244f2a.js"><link rel="prefetch" href="/test-docs/assets/js/9.409d5303.js">
+    <link rel="stylesheet" href="/test-docs/assets/css/0.styles.5728d9f8.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/test-docs/" class="home-link router-link-active"><img src="/test-docs/logo/small.png" alt="ELADMIN 在线文档" class="logo"> <span class="site-name can-hide">ELADMIN 在线文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发指南" class="dropdown-title"><a href="/test-docs/pages/010101/" class="link-title">开发指南</a> <span class="title" style="display:none;">开发指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/test-docs/pages/010101/" class="nav-link">快速开始</a></li><li class="dropdown-item"><!----> <a href="/test-docs/pages/010201/" class="nav-link">后端手册</a></li><li class="dropdown-item"><!----> <a href="/test-docs/pages/010301/" class="nav-link">前端手册</a></li><li class="dropdown-item"><!----> <a href="/test-docs/pages/010401/" class="nav-link">部署项目</a></li></ul></div></div><div class="nav-item"><a href="/test-docs/pages/020101/" class="nav-link">常见问题</a></div><div class="nav-item"><a href="/test-docs/pages/030101/" class="nav-link">支持项目</a></div><div class="nav-item"><a href="/test-docs/pages/040101/" class="nav-link">特别鸣谢</a></div><div class="nav-item"><a href="https://eladmin.vip/demo/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线体验
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.ydyno.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作者动态
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发指南" class="dropdown-title"><a href="/test-docs/pages/010101/" class="link-title">开发指南</a> <span class="title" style="display:none;">开发指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/test-docs/pages/010101/" class="nav-link">快速开始</a></li><li class="dropdown-item"><!----> <a href="/test-docs/pages/010201/" class="nav-link">后端手册</a></li><li class="dropdown-item"><!----> <a href="/test-docs/pages/010301/" class="nav-link">前端手册</a></li><li class="dropdown-item"><!----> <a href="/test-docs/pages/010401/" class="nav-link">部署项目</a></li></ul></div></div><div class="nav-item"><a href="/test-docs/pages/020101/" class="nav-link">常见问题</a></div><div class="nav-item"><a href="/test-docs/pages/030101/" class="nav-link">支持项目</a></div><div class="nav-item"><a href="/test-docs/pages/040101/" class="nav-link">特别鸣谢</a></div><div class="nav-item"><a href="https://eladmin.vip/demo/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线体验
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.ydyno.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作者动态
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速开始</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/test-docs/pages/010101/" class="sidebar-link">简介</a></li><li><a href="/test-docs/pages/010102/" class="sidebar-link">快速了解</a></li><li><a href="/test-docs/pages/010103/" class="sidebar-link">快速开始</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>后端手册</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/test-docs/pages/010201/" class="sidebar-link">新增模块</a></li><li><a href="/test-docs/pages/010202/" class="sidebar-link">权限控制</a></li><li><a href="/test-docs/pages/010203/" class="sidebar-link">通用查询</a></li><li><a href="/test-docs/pages/010204/" class="sidebar-link">系统缓存</a></li><li><a href="/test-docs/pages/010205/" class="sidebar-link">异常处理</a></li><li><a href="/test-docs/pages/010206/" class="sidebar-link">系统日志</a></li><li><a href="/test-docs/pages/010207/" class="sidebar-link">数据权限</a></li><li><a href="/test-docs/pages/010208/" class="sidebar-link">定时任务</a></li><li><a href="/test-docs/pages/010209/" class="sidebar-link">代码生成</a></li><li><a href="/test-docs/pages/010210/" class="sidebar-link">运维管理</a></li><li><a href="/test-docs/pages/010211/" class="sidebar-link">系统工具</a></li><li><a href="/test-docs/pages/010212/" class="sidebar-link">其他杂项</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端手册</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/test-docs/pages/010301/" class="sidebar-link">菜单路由</a></li><li><a href="/test-docs/pages/010302/" class="sidebar-link">自定义主键</a></li><li><a href="/test-docs/pages/010303/" class="sidebar-link">多字段排序</a></li><li><a href="/test-docs/pages/010304/" class="sidebar-link">隐藏操作按钮</a></li><li><a href="/test-docs/pages/010305/" class="sidebar-link">使用数据字典</a></li><li><a href="/test-docs/pages/010306/" class="sidebar-link">统一异常处理</a></li><li><a href="/test-docs/pages/010307/" class="sidebar-link">部分系统组件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>部署项目</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/test-docs/pages/010401/" class="sidebar-link">常规部署方式</a></li><li><a href="/test-docs/pages/010402/" aria-current="page" class="active sidebar-link">容器部署方式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/test-docs/pages/010402/#容器部署方式" class="sidebar-link">容器部署方式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/test-docs/pages/010402/#安装docker" class="sidebar-link">安装Docker</a></li><li class="sidebar-sub-header level3"><a href="/test-docs/pages/010402/#安装mysql与redis" class="sidebar-link">安装Mysql与Redis</a></li><li class="sidebar-sub-header level3"><a href="/test-docs/pages/010402/#构建与启动java容器" class="sidebar-link">构建与启动Java容器</a></li><li class="sidebar-sub-header level3"><a href="/test-docs/pages/010402/#安装与配置nginx容器" class="sidebar-link">安装与配置Nginx容器</a></li><li class="sidebar-sub-header level3"><a href="/test-docs/pages/010402/#打包上传前端代码【重要】" class="sidebar-link">打包上传前端代码【重要】</a></li></ul></li></ul></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="placeholder"></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">容器部署方式<!----></h1>  <div class="theme-vdoing-content content__default"><h2 id="容器部署方式"><a href="#容器部署方式" class="header-anchor">#</a> 容器部署方式</h2> <p>对于熟悉 Docker 的开发者来说，使用 Docker 部署管理更加的简单高效</p> <p>我一般习惯将 home 目录作为工作目录，因此 Docker 挂载的文件也都会存放在 home 目录中</p> <h3 id="安装docker"><a href="#安装docker" class="header-anchor">#</a> 安装Docker</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun &amp;&amp; systemctl start docker &amp;&amp; systemctl enable docker
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果你机器是国内的机器，那么需要配置镜像加速，一般使用阿里云镜像加速 <a href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors" target="_blank" rel="noopener noreferrer">阿里云加速官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><img src="https://eladmin.vip/images/2020/09/17/imageb817a495226b07de.jpg" alt="imageb817a495226b07de.jpg"></p> <h3 id="安装mysql与redis"><a href="#安装mysql与redis" class="header-anchor">#</a> 安装Mysql与Redis</h3> <p>这里使用的是 mariadb 镜像，并且将 mariadb 数据库文件挂载到宿主机的 <code>/home/mysql/</code> 目录下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker run -v /home/mysql/:/var/lib/mysql \
+-p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 \
+--privileged=true --restart=always --name mariadb -d mariadb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>安装Redis</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker run -itd --name redis --restart=always -p 6379:6379 redis
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="构建与启动java容器"><a href="#构建与启动java容器" class="header-anchor">#</a> 构建与启动Java容器</h3> <h4 id="构建镜像"><a href="#构建镜像" class="header-anchor">#</a> 构建镜像</h4> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>Docker 部署使用到了环境变量参数，对于非 <code>V2.6</code> 版本的，需要修改 application.yml、application-prod.yml 等配置</p> <p><a href="https://github.com/elunez/eladmin/commit/029a932ff96e282f316809af30a176764eafde43" target="_blank" rel="noopener noreferrer">具体参考<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <p>修改完成后，打包项目将打包好地Jar上传到服务器的 <code>/home/eladmin</code> 目录，在该目录创建 Dockerfile 文件，并编写 Dockerfile</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>FROM java:8
+ARG JAR_FILE=./*.jar
+COPY ${JAR_FILE} app.jar
+ENV TZ=Asia/Shanghai
+ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;,&quot;/app.jar&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>构建镜像</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker build -t eladmin .
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="启动java容器"><a href="#启动java容器" class="header-anchor">#</a> 启动Java容器</h4> <p>将容器中的 <code>/home/eladmin/</code> 挂载到宿主机的 <code>/home/data/</code> 目录并且设置数据库地址与密码等环境变量参数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker run -d \
+--name eladmin --restart always \
+-p 8000:8000 \
+-e &quot;TZ=Asia/Shanghai&quot; \
+-e DB_HOST=172.17.0.1 \
+-e DB_PWD=mysql_pwd \
+-e REDIS_HOST=172.17.0.1 \
+-v /home/data/:/home/eladmin/ \
+eladmin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="安装与配置nginx容器"><a href="#安装与配置nginx容器" class="header-anchor">#</a> 安装与配置Nginx容器</h3> <h4 id="安装nginx"><a href="#安装nginx" class="header-anchor">#</a> 安装Nginx</h4> <div class="custom-block tip"><p class="custom-block-title">提示</p> <ul><li>/home/nginx/conf.d 用于存放配置文件</li> <li>/home/nginx/cert 用于存放 https 证书</li> <li>/home/nginx/html 用于存放网页文件</li> <li>/home/nginx/logs 用于存放日志</li></ul></div> <p>首先在 <code>/home/nginx</code> 目录创建 nginx.conf 文件，不然安装 Nginx 会报错</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>user  nginx;
+worker_processes  1;
+
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] &quot;$request&quot; '
+                      '$status $body_bytes_sent &quot;$http_referer&quot; '
+                      '&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;';
+
+#    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+
+    include /etc/nginx/conf.d/*.conf;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>然后安装 Nginx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker run -d \
+--name nginx --restart always \
+-p 80:80 -p 443:443 \
+-e &quot;TZ=Asia/Shanghai&quot; \
+-v /home/nginx/nginx.conf:/etc/nginx/nginx.conf \
+-v /home/nginx/conf.d:/etc/nginx/conf.d \
+-v /home/nginx/logs:/var/log/nginx \
+-v /home/nginx/cert:/etc/nginx/cert \
+-v /home/nginx/html:/usr/share/nginx/html \
+nginx:alpine
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="配置nginx"><a href="#配置nginx" class="header-anchor">#</a> 配置Nginx</h4> <p>这里使用 Nginx 反向代理访问后端服务，由于容器内部通信，因此需要使用容器的 IP，也就是 172.17.0.1</p> <p>在 <code>/home/nginx/conf.d</code> 创建一个 eladmin.conf 的配置文件，文件内容如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>server
+    {
+        listen 80;
+        server_name 域名/外网IP;
+        index index.html;
+        root  /usr/share/nginx/html/eladmin/dist;  #dist上传的路径
+
+        # 避免访问出现 404 错误
+        location / {
+          try_files $uri $uri/ @router;
+          index  index.html;
+        }
+
+        location @router {
+          rewrite ^.*$ /index.html last;
+        }
+
+        # 接口
+        location /api {
+          proxy_pass http://172.17.0.1:8000;
+          proxy_set_header X-Forwarded-Proto $scheme;
+          proxy_set_header X-Forwarded-Port $server_port;
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection &quot;upgrade&quot;;
+        }
+
+        # 授权接口
+        location /auth {
+          proxy_pass http://172.17.0.1:8000;
+          proxy_set_header X-Forwarded-Proto $scheme;
+          proxy_set_header X-Forwarded-Port $server_port;
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection &quot;upgrade&quot;;
+        }
+
+        # WebSocket 服务
+        location /webSocket {
+          proxy_redirect off;
+          proxy_pass http://172.17.0.1:8000/webSocket;
+          proxy_http_version 1.1;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection &quot;upgrade&quot;;
+          proxy_set_header Host $http_host;
+          proxy_set_header X-Real-IP $remote_addr;
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_connect_timeout 60s;
+          proxy_read_timeout 86400s;
+          proxy_send_timeout 60s;
+        }
+
+        # 头像
+        location /avatar {
+          proxy_pass http://172.17.0.1:8000;
+        }
+
+        # 文件
+        location /file {
+          proxy_pass http://172.17.0.1:8000;
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><p>注意：容器中 <code>/usr/share/nginx/html/eladmin/dist</code> 对应宿主机的 <code>/home/nginx/html/eladmin/dist</code> 目录，因此文件上传到宿主机的目录即可</p> <h3 id="打包上传前端代码【重要】"><a href="#打包上传前端代码【重要】" class="header-anchor">#</a> 打包上传前端代码【重要】</h3> <p>由于Nginx使用的是反向代理后端接口，因此 非 V2.6 版本需要做如下修改</p> <p>1、将 <code>.env.production</code> 中的接口地址改为 <code>'/'</code></p> <p><img src="https://eladmin.vip/images/2020/09/17/imageb0806c848d01318e.jpg" alt="imageb0806c848d01318e.jpg"></p> <p>2、修改 <code>api.js</code> 中的 <code>baseUrl = process.env.VUE_APP_BASE_API === '/' ? '' : process.env.VUE_APP_BASE_API</code></p> <p><img src="https://eladmin.vip/images/2020/09/17/imagedcd151a815c62932.jpg" alt="imagedcd151a815c62932.jpg"></p> <p>3、打包项目并且上传到 <code>/home/nginx/html/eladmin</code> 目录下</p> <p>4、重启 Nginx 容器 <code>docker restart nginx</code></p> <!----></div></div> <div class="page-slot page-slot-bottom">
+    <div class="wwads-cn wwads-horizontal" data-id="148" style="width:100%;max-height:90px;"></div>
+  </div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/elunez/eladmin-doc/edit/master/docs/01.指南/04.部署项目/02.容器部署方式.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023/02/21, 09:59:52</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/test-docs/pages/010401/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">常规部署方式</div></a> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/test-docs/pages/010401/" class="prev">常规部署方式</a></span> <!----></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="https://github.com/elunez" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://gitee.com/elunez" title="Gitee" target="_blank" class="iconfont icon-gitee"></a><a href="mailto:zj7321@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2018-2023
+    <span> <a href="https://www.ydyno.com/" target=_blank>知了博客</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><span class="close-but">×</span> <div>
+    <div class="wwads-cn wwads-vertical" data-id="148" style="max-width:200px;"></div>
+    <script>
+        var ele = document.querySelector('.wwads-vertical').parentElement.parentElement;
+        ele.style.maxHeight = 'unset';
+        ele.firstChild.hidden = true;
+    </script>
+  </div></div></div></div><div class="global-ui"></div></div>
+    <script src="/test-docs/assets/js/app.3437f3ea.js" defer></script><script src="/test-docs/assets/js/2.5adb828d.js" defer></script><script src="/test-docs/assets/js/28.996095ac.js" defer></script>
+  </body>
+</html>
